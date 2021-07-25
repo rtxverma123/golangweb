@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata: 
+     name: golang
+     labels: 
+         app: myapp
+spec: 
+   replicas: 1
+   selector: 
+       app: myapp
+   template: 
+        metadata: 
+          labels: 
+           app: myapp
+        spec: 
+          containers: 
+            - name: mygolang
+              image: rtxverma123/golang
+              ports: 
+                 - containerPort: 5000
