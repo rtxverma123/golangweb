@@ -4,7 +4,7 @@ pipeline{
   stages{
     stage('Github'){
       steps{
-        git ''
+        git 'https://github.com/rtxverma123/golangweb.git'
       }
     }
     stage('Build'){
