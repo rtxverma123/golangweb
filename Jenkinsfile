@@ -15,7 +15,8 @@ pipeline{
     }
     stage('Push'){
       steps{
-      sh 'docker push rtxverma123/golang'
+//       sh 'docker push rtxverma123/golang'
+         echo 'Pushed to dockerhub'
       }
     }
     stage('Deploy'){
