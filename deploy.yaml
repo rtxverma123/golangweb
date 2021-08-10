@@ -3,16 +3,16 @@ kind: Deployment
 metadata: 
      name: golang
      labels: 
-         app: myapp
+         myname: xyz
 spec: 
    replicas: 1
    selector: 
      matchLabels: 
-          app: myapp
+          myname: xyz
    template: 
         metadata: 
           labels: 
-            app: myapp
+            myname: xyz
         spec: 
           containers: 
             - name: mygolang
